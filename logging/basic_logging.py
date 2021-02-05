@@ -6,5 +6,6 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
-logging.error("Some serious error occurred.")
-logging.warning('Function you are using is deprecated.')
+logger = logging.getLogger()
+logger.error("Some serious error occurred.")
+logger.warning('Function you are using is deprecated.')
